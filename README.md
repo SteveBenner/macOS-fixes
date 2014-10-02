@@ -19,8 +19,15 @@ These scripts are intended for use within Mac OS X 10.9 Mavericks
 
     Disables the `systemstats` daemon which can cause massive memory leakage in Mavericks
     
+3. **Rebuild the launch services database**
+
+    This solves multiple problems, including:
+    1. App Store apps showing as 'installed' when they aren't, preventing them from being installed.
+    
 
 ### TODO:
 - add disclaimer
 - setup gists
 - integrate brew-fixes
+- feature ideas for fixes
+    - tags (i.e. `app-store`)
