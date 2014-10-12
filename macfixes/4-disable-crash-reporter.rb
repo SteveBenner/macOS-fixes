@@ -7,7 +7,17 @@
 # desirable to just turn off CrashReporter entirely, as it will continually generate processes in
 # the background which spew errors and logs, resulting in massive overhead to your system resources.
 #
+# DIAGNOSING:
+# This issue can be diagnosed by opening up Activity Monitor and looking at the top of your CPU
+# column for the 'ReportCrash' process; if it's there and taking up significant CPU, run this script!
+#
 # NOTE: This script requires root access, so it might be necessary to use 'sudo' when executing it
+#
+# EFFECTS:
+# It is important to note that serious problems with CrashReporter are nearly always caused by other
+# software on your system, and this fix does NOT offer any solution for addressing such possibilities.
+# When you run this fix, though it will disable CrashReporter, you should be mindful of any potential
+# issues still present and most likely would benefit from a complete system re-installation.
 #
 # Resources
 # - http://hints.macworld.com/article.php?story=20090902164105138
@@ -48,7 +58,7 @@ USER_FILES = %w[
 
 # A fast, reliable way to determine if ReportCrash is active is by checking the list of
 # running daemons via the 'launchctl' utility (for both root and user)
-SCAN_DAEMON_LIST = 'launchctl list | grep ReportCrash'
+SCAN_DAEMON_LIST = 'launchctl list | grep ReportCrash' # another command that works is `lsof | grep ReportCrash`
 CRASH_REPORTER_IS_ENABLED = (system(SCAN_DAEMON_LIST) || system("sudo #{SCAN_DAEMON_LIST}")) ? true : false
 ACTION = MODE.nil? ? :unload : :load # command to pass to launchctl
 
