@@ -26,9 +26,9 @@ backup_filename = backup_dir.join 'snapshot-', Time.now.strftime('%Y-%m-%d'), '.
 
 # Daemon config files that control systemstats and run on startup
 files = %w[
-	com.apple.systemstatsd.plist
-	com.apple.systemstats.daily.plist
-	com.apple.systemstats.analysis.plist
+  com.apple.systemstatsd.plist
+  com.apple.systemstats.daily.plist
+  com.apple.systemstats.analysis.plist
 ]
 
 # Disable or enable systemstats
