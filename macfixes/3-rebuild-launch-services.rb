@@ -21,9 +21,7 @@
 
 # Kill the launch services processes, effectively resetting the database
 PROGRAM = '/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister'
-ARGS = [
-  '-kill'
-]
+ARGS = ['-kill']
 
 ` -kill -r -domain local -domain system -domain user`
 
