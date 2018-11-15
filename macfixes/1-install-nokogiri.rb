@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 #
-# Mac fix 1 - Install the Nokogiri gem on Mac OS 10.9 Mavericks
+# Mac fix 1 - Install the Nokogiri gem on macOS 10.9 Mavericks
 #
 # Usage: to configure and install using Bundler, pass in 'bundle' as an argument to the script.
 #
@@ -17,7 +17,7 @@
 # > need configuration options.
 #
 # This script is basically just carrying out the install process illustrated on the
-# Nokogiri website, specifically for OS X 10.9. Other systems are not covered.
+# Nokogiri website, specifically for macOS 10.9. Other systems are not covered.
 # More information can be found at: http://nokogiri.org/tutorials/installing_nokogiri.html
 #
 # Some additional resources I came across while troubleshooting this issue:
@@ -30,7 +30,7 @@
 # There are many factors involved in Nokogiri's installation. This script was tested
 # on a system with the following characteristics and installations:
 #
-# - Mac OS X 10.9.4
+# - macOS 10.9.4
 # - 'xcode-select' installed
 # - Homebrew 0.9.5
 # - Ruby 2.1.2
