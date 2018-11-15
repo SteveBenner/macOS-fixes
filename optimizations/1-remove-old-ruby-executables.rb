@@ -2,7 +2,7 @@
 #
 # Optimization 1 - Remove executables affiliated with outdated Ruby installations
 #
-# OS X comes packaged with an outdated Ruby installation that should be replaced ASAP, even
+# macOS comes packaged with an outdated Ruby installation that should be replaced ASAP, even
 # if only for security reasons. One issue that can arise from using the System Ruby is
 # creation of executables in the PATH which are designated for use with the System Ruby.
 # For instance, this can be occur when installing certain gems via RubyGems. Such
